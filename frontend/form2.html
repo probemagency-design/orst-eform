@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ขออนุญาตใช้สิทธิจัดพิมพ์และจำหน่าย — สำนักงานราชบัณฑิตยสภา</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Noto+Serif+Thai:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="form-page-body">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <div class="logo-emblem">ร</div>
+        <div class="logo-text">
+          <span class="logo-main">ราชบัณฑิตยสภา</span>
+          <span class="logo-sub">สำนักงานราชบัณฑิตยสภา</span>
+        </div>
+      </div>
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link">งานบริการ</a>
+        <a href="https://www.orst.go.th" class="nav-link" target="_blank">เว็บไซต์หลัก ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="form-layout">
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <a href="index.html">งานบริการ</a> › ขออนุญาตใช้สิทธิจัดพิมพ์และจำหน่าย
+    </nav>
+
+    <div class="form-header">
+      <div class="form-header-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      </div>
+      <div class="form-header-text">
+        <h1>แบบคำขออนุญาตใช้สิทธิในการจัดพิมพ์และจำหน่ายหนังสือ</h1>
+        <p>ตามระเบียบสำนักงานราชบัณฑิตยสภา ว่าด้วยการอนุญาตให้ใช้สิทธิการจัดพิมพ์และจำหน่ายหนังสือฯ พ.ศ. ๒๕๖๑</p>
+      </div>
+    </div>
+
+    <div class="notice" role="note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <div>กรุณากรอกข้อมูลให้ครบถ้วน เมื่อส่งแบบฟอร์มแล้ว ระบบจะสร้างไฟล์ PDF และส่งอัตโนมัติไปยัง <strong>saraban@orst.go.th</strong> พร้อมส่งสำเนาถึงท่านทางอีเมล</div>
+    </div>
+
+    <form id="form2" novalidate>
+
+      <!-- Section 1: ข้อมูลผู้ยื่น -->
+      <div class="form-card">
+        <div class="form-section-title">ส่วนที่ ๑ — ข้อมูลผู้ยื่นคำขอ</div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">ชื่อ-นามสกุล <span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="นาย/นาง/นางสาว ชื่อ นามสกุล" autocomplete="name">
+            <span class="err-msg">กรุณากรอกชื่อ-นามสกุล</span>
+          </div>
+          <div class="field">
+            <label for="position">ตำแหน่ง</label>
+            <input type="text" id="position" name="position" placeholder="ตำแหน่งในองค์กร">
+          </div>
+          <div class="field full">
+            <label for="company">บริษัท/หน่วยงาน <span class="req">*</span></label>
+            <input type="text" id="company" name="company" placeholder="ชื่อบริษัทหรือหน่วยงาน">
+            <span class="err-msg">กรุณากรอกชื่อบริษัท/หน่วยงาน</span>
+          </div>
+          <div class="field full">
+            <label for="address">ที่อยู่</label>
+            <input type="text" id="address" name="address" placeholder="บ้านเลขที่ ถนน แขวง เขต จังหวัด รหัสไปรษณีย์">
+          </div>
+          <div class="field">
+            <label for="tel">โทรศัพท์</label>
+            <input type="tel" id="tel" name="tel" placeholder="0x-xxxx-xxxx" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="email">อีเมลผู้ยื่น <span class="req">*</span></label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" autocomplete="email">
+            <span class="hint">สำเนา PDF จะส่งไปยังอีเมลนี้</span>
+            <span class="err-msg">กรุณากรอกอีเมลให้ถูกต้อง</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: หนังสือ -->
+      <div class="form-card">
+        <div class="form-section-title">ส่วนที่ ๒ — รายละเอียดหนังสือที่ขอใช้สิทธิ</div>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="bookTitle">ชื่อหนังสือที่ขอใช้สิทธิ <span class="req">*</span></label>
+            <input type="text" id="bookTitle" name="bookTitle" placeholder="ชื่อเต็มของหนังสือ">
+            <span class="err-msg">กรุณากรอกชื่อหนังสือ</span>
+          </div>
+          <div class="field">
+            <label for="isbn">ISBN (ถ้ามี)</label>
+            <input type="text" id="isbn" name="isbn" placeholder="978-xxx-xxx-xxx-x">
+          </div>
+          <div class="field">
+            <label for="edition">ฉบับที่/ปีที่พิมพ์</label>
+            <input type="text" id="edition" name="edition" placeholder="เช่น พิมพ์ครั้งที่ 3, พ.ศ. 2563">
+          </div>
+          <div class="field">
+            <label for="quantity">จำนวนพิมพ์ (เล่ม) <span class="req">*</span></label>
+            <input type="number" id="quantity" name="quantity" placeholder="0" min="1" step="1">
+            <span class="err-msg">กรุณาระบุจำนวน</span>
+          </div>
+          <div class="field">
+            <label for="price">ราคาจำหน่าย (บาท/เล่ม)</label>
+            <input type="number" id="price" name="price" placeholder="0" min="0" step="1">
+          </div>
+          <div class="field">
+            <label for="licenseYears">ระยะเวลาที่ขอใช้สิทธิ (ปี) <span class="req">*</span></label>
+            <input type="number" id="licenseYears" name="licenseYears" placeholder="1" min="1" max="10" step="1">
+            <span class="err-msg">กรุณาระบุระยะเวลา</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: แผนจำหน่าย -->
+      <div class="form-card">
+        <div class="form-section-title">ส่วนที่ ๓ — แผนการจัดจำหน่าย</div>
+        <div class="form-grid">
+          <div class="field full">
+            <label for="channels">ช่องทางจำหน่าย <span class="req">*</span></label>
+            <input type="text" id="channels" name="channels" placeholder="เช่น ร้านหนังสือชั้นนำ, ออนไลน์ (Shopee/Lazada/เว็บไซต์), งานหนังสือ">
+            <span class="err-msg">กรุณาระบุช่องทางจำหน่าย</span>
+          </div>
+          <div class="field full">
+            <label for="salesArea">พื้นที่จำหน่าย</label>
+            <input type="text" id="salesArea" name="salesArea" placeholder="เช่น ทั่วประเทศไทย, ภาคกลาง, ส่งออกต่างประเทศ">
+          </div>
+          <div class="field full">
+            <label for="marketPlan">แผนการตลาด/วิธีการส่งเสริมการขาย <span class="req">*</span></label>
+            <textarea id="marketPlan" name="marketPlan" placeholder="อธิบายแผนการตลาด การโฆษณา และวิธีการส่งเสริมการขายโดยละเอียด..."></textarea>
+            <span class="err-msg">กรุณาระบุแผนการตลาด</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: การส่ง -->
+      <div class="form-card">
+        <div class="form-section-title">ส่วนที่ ๔ — ข้อมูลการยื่นคำขอ</div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="toEmail">ส่งถึง (อีเมลหน่วยงาน)</label>
+            <input type="email" id="toEmail" name="toEmail" value="saraban@orst.go.th" readonly>
+            <span class="hint">อีเมลอย่างเป็นทางการของสำนักงานฯ</span>
+          </div>
+          <div class="field">
+            <label for="date">วันที่ยื่นคำขอ</label>
+            <input type="date" id="date" name="date">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <span class="actions-left">
+          <span class="req">*</span> ช่องที่จำเป็น
+        </span>
+        <div class="actions-right">
+          <button type="button" class="btn btn-preview" onclick="handlePreview()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            ดูตัวอย่าง PDF
+          </button>
+          <button type="submit" id="submitBtn" class="btn btn-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span class="btn-text">ส่งคำขอ</span>
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-info">
+        <strong>สำนักงานราชบัณฑิตยสภา</strong>
+        เลขที่ ๑๒๐ หมู่ ๓ ศูนย์ราชการเฉลิมพระเกียรติ ๘๐ พรรษาฯ อาคารซี กรุงเทพฯ ๑๐๒๑๐
+      </div>
+      <div class="footer-contact">
+        โทร. ๐๒ ๑๔๑ ๑๗๑๘ &nbsp;|&nbsp; saraban@orst.go.th
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/pdf-gen.js"></script>
+  <script src="js/form-utils.js"></script>
+  <script>
+    document.getElementById('date').value = todayISO();
+
+    function getFormData() {
+      return {
+        name: document.getElementById('name').value.trim(),
+        position: document.getElementById('position').value.trim(),
+        company: document.getElementById('company').value.trim(),
+        address: document.getElementById('address').value.trim(),
+        tel: document.getElementById('tel').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        bookTitle: document.getElementById('bookTitle').value.trim(),
+        isbn: document.getElementById('isbn').value.trim(),
+        edition: document.getElementById('edition').value.trim(),
+        quantity: document.getElementById('quantity').value,
+        price: document.getElementById('price').value,
+        licenseYears: document.getElementById('licenseYears').value,
+        channels: document.getElementById('channels').value.trim(),
+        salesArea: document.getElementById('salesArea').value.trim(),
+        marketPlan: document.getElementById('marketPlan').value.trim(),
+        toEmail: document.getElementById('toEmail').value.trim(),
+        date: thaiDate(document.getElementById('date').value),
+      };
+    }
+
+    function validateForm() {
+      return Validator.validate([
+        { el: document.getElementById('name'), check: Validator.notEmpty, msg: 'กรุณากรอกชื่อ-นามสกุล' },
+        { el: document.getElementById('company'), check: Validator.notEmpty, msg: 'กรุณากรอกชื่อบริษัท/หน่วยงาน' },
+        { el: document.getElementById('email'), check: Validator.isEmail, msg: 'กรุณากรอกอีเมลให้ถูกต้อง' },
+        { el: document.getElementById('bookTitle'), check: Validator.notEmpty, msg: 'กรุณากรอกชื่อหนังสือ' },
+        { el: document.getElementById('quantity'), check: v => parseInt(v) > 0, msg: 'กรุณาระบุจำนวน' },
+        { el: document.getElementById('licenseYears'), check: v => parseInt(v) > 0, msg: 'กรุณาระบุระยะเวลา' },
+        { el: document.getElementById('channels'), check: Validator.notEmpty, msg: 'กรุณาระบุช่องทางจำหน่าย' },
+        { el: document.getElementById('marketPlan'), check: Validator.notEmpty, msg: 'กรุณาระบุแผนการตลาด' },
+      ]);
+    }
+
+    function handlePreview() {
+      if (!validateForm()) {
+        Toast.show('error', 'ข้อมูลไม่ครบถ้วน', 'กรุณากรอกข้อมูลที่จำเป็น (*)');
+        return;
+      }
+      const doc = ORST_PDF.buildForm2(getFormData());
+      PDFModal.show(doc.output('datauristring'), 'ตัวอย่าง — แบบคำขออนุญาตใช้สิทธิจัดพิมพ์และจำหน่าย');
+    }
+
+    document.getElementById('form2').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!validateForm()) {
+        Toast.show('error', 'ข้อมูลไม่ครบถ้วน', 'กรุณากรอกข้อมูลที่จำเป็น (*)');
+        return;
+      }
+
+      const btn = document.getElementById('submitBtn');
+      setLoading(btn, true);
+
+      try {
+        const data = getFormData();
+        const doc = ORST_PDF.buildForm2(data);
+        const pdfBase64 = doc.output('datauristring').split(',')[1];
+
+        await submitToAPI('/api/submit', {
+          formType: 'form2',
+          formTitle: 'แบบคำขออนุญาตใช้สิทธิจัดพิมพ์และจำหน่าย',
+          data,
+          pdfBase64,
+        });
+
+        Toast.show('success', 'ส่งคำขอสำเร็จ!', `ระบบส่ง PDF ไปยัง ${data.toEmail} และสำเนาถึง ${data.email} แล้ว`);
+        document.getElementById('form2').reset();
+        document.getElementById('date').value = todayISO();
+
+      } catch (err) {
+        const data = getFormData();
+        const doc = ORST_PDF.buildForm2(data);
+        doc.save('คำขออนุญาตใช้สิทธิ_' + data.name + '.pdf');
+        Toast.show('info', 'บันทึก PDF แล้ว', 'กรุณาส่งไฟล์ไปยัง saraban@orst.go.th ด้วยตนเอง (API ยังไม่เชื่อมต่อ)');
+      } finally {
+        setLoading(btn, false);
+      }
+    });
+  </script>
+</body>
+</html>
